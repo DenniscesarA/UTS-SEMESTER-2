@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Distro | Northsthroom</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+<script LANGUAGE="JAVASCRIPT">
+
+function ValidasiForm(){
+if (document.FormTamu.inputName.value=="") { alert("Kolom nama tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputWarnaBaju.value=="") { alert("Kolom Warna Baju tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputNameBaju.value=="") { alert("Kolom Nama Baju tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputUkuran.value=="") { alert("Kolom Ukuran tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputEmail.value=="") { alert("Kolom Email tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputPhone.value=="") { alert("Kolom Nomor Telpn tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputJumlah.value=="") { alert("Kolom Jumlah tidak boleh kosong"); return false;
+}
+if (document.FormTamu.inputAlamat.value=="") { alert("Kolom Alamat tidak boleh kosong"); return false;
+}
+}
+</script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">FULLVOX</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="popular-items.html">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="new-arrivals.html">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+            <section class="py-5">
+                <div class="container px-5">
+                    <h1 class="fw-bolder fs-5 mb-4" >Form Pembelian Baju</h1>
+                    <div class="card border-0 shadow rounded-3 overflow-hidden">
+                        <p class="h5 fw" align="center" >Silahkan isi data pemesanan baju anda</p>
+                        <form onSubmit="return ValidasiForm()" name="FormTamu" method="post" action="" style="margin-left: 120px; margin-right: 120px; margin-bottom: 120px; ">
+                                  <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                  </div><br>
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                    </div>
+                                  </div><br>
+
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Merk Baju</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputNameBaju" placeholder="Merk Baju">
+                                    </div>
+                                  </div><br>
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Ukuran</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputUkuran" placeholder="Ukuran">
+                                    </div>
+                                  </div><br>
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Warna Baju</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputWarnaBaju" placeholder="Warna Baju">
+                                    </div>
+                                  </div><br>
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Jumlah</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputJumlah" placeholder="Jumlah">
+                                    </div>
+                                  </div><br>
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Phone</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                                    </div>
+                                  </div><br>
+                                  <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Alamat Pembeli</label>
+                                    <div class="col-sm-10">
+                                      <textarea class="form-control" id="inputAlamat" placeholder="alamat">
+                                          
+                                      </textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <div class="col-sm-4" >
+                                      <button type="submit" class="btn btn-primary" onClick="alert('Sukses')">Beli</button>
+                                      <a href="" class="btn btn-danger">Cancel</a>
+                                    </div>
+                                  </div>
+                                </form>
+                    </div>
+                </div>
+            </section>
+        
+
+</header>
+        <!-- Section-->
+     
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; FULLVOX 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
